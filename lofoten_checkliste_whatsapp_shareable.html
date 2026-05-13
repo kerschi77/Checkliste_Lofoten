@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lofoten Checkliste</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    .item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    .item:hover {
+      background: #f9fafb;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.3);
+      margin-top: 4px;
+      cursor: pointer;
+    }
+
+    label {
+      flex: 1;
+      line-height: 1.5;
+      cursor: pointer;
+    }
+
+    .note {
+      background: #fff7ed;
+      border-left: 4px solid #f59e0b;
+      padding: 12px;
+      margin-top: 14px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
+    .optional {
+      color: #0f766e;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 24px;
+      border: none;
+      border-radius: 12px;
+      background: #111827;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1f2937;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎒 Lofoten Checkliste</h1>
+
+    <h2>🎒 Gepäck & Organisation</h2>
+    <div class="item"><input type="checkbox" id="k1"><label for="k1">3× Koffer</label></div>
+    <div class="item"><input type="checkbox" id="k2"><label for="k2">Rucksack (wandertauglich, 50–65 l empfohlen)</label></div>
+    <div class="item"><input type="checkbox" id="k3"><label for="k3">Bauchtasche</label></div>
+    <div class="item"><input type="checkbox" id="k4"><label for="k4">Wäschetasche (schmutzige Wäsche)</label></div>
+    <div class="item"><input type="checkbox" id="k5"><label for="k5">Wasserdichte Packsäcke / Hüllen</label></div>
+    <div class="item"><input type="checkbox" id="k6"><label for="k6">Müllbeutel</label></div>
+    <div class="item"><input type="checkbox" id="k7"><label for="k7">Gummis / Elastikbänder</label></div>
+
+    <h2>⛺ Camping & Schlafen</h2>
+    <div class="item"><input type="checkbox" id="c1"><label for="c1">2× Zelt</label></div>
+    <div class="item"><input type="checkbox" id="c2"><label for="c2">Schlafsack (mind. Komfort 0 °C)</label></div>
+    <div class="item"><input type="checkbox" id="c3"><label for="c3">Isomatte / Unterlage</label></div>
+    <div class="item"><input type="checkbox" id="c4"><label for="c4">Kissen</label></div>
+    <div class="item"><input type="checkbox" id="c5"><label for="c5">Ohrstöpsel</label></div>
+    <div class="item"><input type="checkbox" id="c6"><label for="c6">Stirnlampe</label></div>
+    <div class="item"><input type="checkbox" id="c7"><label for="c7">Wäscheleine + Stück Seil</label></div>
+    <div class="item"><input type="checkbox" id="c8"><label for="c8">Feuerzeug / Streichhölzer</label></div>
+    <div class="item"><input type="checkbox" id="c9"><label for="c9"><span class="optional">Optional:</span> Zelt-Reparaturset / Gaffa-Tape</label></div>
+
+    <h2>🔥 Kochen & Essen</h2>
+    <div class="item"><input type="checkbox" id="e1"><label for="e1">Kochausrüstung</label></div>
+    <div class="item"><input type="checkbox" id="e2"><label for="e2">Gaskocher</label></div>
+    <div class="item"><input type="checkbox" id="e3"><label for="e3">Gas</label></div>
+    <div class="item"><input type="checkbox" id="e4"><label for="e4">Besteck, Teller, Becher</label></div>
+    <div class="item"><input type="checkbox" id="e5"><label for="e5">Trinkflasche</label></div>
+    <div class="item"><input type="checkbox" id="e6"><label for="e6">Wasserfilter</label></div>
+    <div class="item"><input type="checkbox" id="e7"><label for="e7">Klopapier / Tempo</label></div>
+
+    <h3>Lebensmittel</h3>
+    <div class="item"><input type="checkbox" id="f1"><label for="f1">Instantkaffee</label></div>
+    <div class="item"><input type="checkbox" id="f2"><label for="f2">Müsli</label></div>
+    <div class="item"><input type="checkbox" id="f3"><label for="f3">H-Milch oder Milchpulver</label></div>
+    <div class="item"><input type="checkbox" id="f4"><label for="f4">Brioche</label></div>
+    <div class="item"><input type="checkbox" id="f5"><label for="f5">Reis</label></div>
+    <div class="item"><input type="checkbox" id="f6"><label for="f6">Nudeln</label></div>
+    <div class="item"><input type="checkbox" id="f7"><label for="f7">Thunfisch</label></div>
+    <div class="item"><input type="checkbox" id="f8"><label for="f8">Salz</label></div>
+    <div class="item"><input type="checkbox" id="f9"><label for="f9">Energieriegel</label></div>
+    <div class="item"><input type="checkbox" id="f10"><label for="f10">Nüsse</label></div>
+    <div class="item"><input type="checkbox" id="f11"><label for="f11">Datteln</label></div>
+    <div class="item"><input type="checkbox" id="f12"><label for="f12">Wasser</label></div>
+
+    <div class="note">➡️ Lebensmittel bekommst du auf den Lofoten fast überall, aber teuer – Basis mitzunehmen ist sinnvoll.</div>
+
+    <h2>🥾 Wandern & Kleidung</h2>
+    <div class="item"><input type="checkbox" id="w1"><label for="w1">Wanderschuhe</label></div>
+    <div class="item"><input type="checkbox" id="w2"><label for="w2">Regenjacke (Hardshell empfohlen)</label></div>
+    <div class="item"><input type="checkbox" id="w3"><label for="w3">Lange Kleidung</label></div>
+    <div class="item"><input type="checkbox" id="w4"><label for="w4">Kurze Kleidung</label></div>
+    <div class="item"><input type="checkbox" id="w5"><label for="w5">Unterwäsche</label></div>
+    <div class="item"><input type="checkbox" id="w6"><label for="w6">Badekleidung</label></div>
+    <div class="item"><input type="checkbox" id="w7"><label for="w7">Freizeitkleidung (Stadt)</label></div>
+    <div class="item"><input type="checkbox" id="w8"><label for="w8">Hut / Kopfbedeckung</label></div>
+    <div class="item"><input type="checkbox" id="w9"><label for="w9">Handschuhe</label></div>
+    <div class="item"><input type="checkbox" id="w10"><label for="w10">Buff / Schal</label></div>
+    <div class="item"><input type="checkbox" id="w11"><label for="w11">Wanderstöcke</label></div>
+    <div class="item"><input type="checkbox" id="w12"><label for="w12">Schlappen</label></div>
+    <div class="item"><input type="checkbox" id="w13"><label for="w13"><span class="optional">Optional:</span> Warme Midlayer (Fleece / leichte Daune)</label></div>
+    <div class="item"><input type="checkbox" id="w14"><label for="w14"><span class="optional">Optional:</span> Regenhose</label></div>
+
+    <div class="note">➡️ Wind + Nebel auf den Lofoten können selbst im Sommer sehr kalt sein.</div>
+
+    <h2>🧼 Hygiene & Gesundheit</h2>
+    <div class="item"><input type="checkbox" id="h1"><label for="h1">Toilettentasche</label></div>
+    <div class="item"><input type="checkbox" id="h2"><label for="h2">Seife</label></div>
+    <div class="item"><input type="checkbox" id="h3"><label for="h3">Handtuch groß + klein</label></div>
+    <div class="item"><input type="checkbox" id="h4"><label for="h4">Erste-Hilfe-Set</label></div>
+    <div class="item"><input type="checkbox" id="h5"><label for="h5">Blasenpflaster</label></div>
+    <div class="item"><input type="checkbox" id="h6"><label for="h6">Sonnencreme</label></div>
+    <div class="item"><input type="checkbox" id="h7"><label for="h7">Sonnenbrille</label></div>
+    <div class="item"><input type="checkbox" id="h8"><label for="h8">Mückenschutz</label></div>
+
+    <div class="note">➡️ Mücken können je nach Gegend abends heftig sein.</div>
+
+    <h2>🔌 Technik & Extras</h2>
+    <div class="item"><input type="checkbox" id="t1"><label for="t1">Powerbank + Ladekabel</label></div>
+    <div class="item"><input type="checkbox" id="t2"><label for="t2">Taschenmesser (Survival)</label></div>
+    <div class="item"><input type="checkbox" id="t3"><label for="t3">Fernglas</label></div>
+    <div class="item"><input type="checkbox" id="t4"><label for="t4">Drohne</label></div>
+    <div class="item"><input type="checkbox" id="t5"><label for="t5">Ausweis / Reisepass</label></div>
+    <div class="item"><input type="checkbox" id="t6"><label for="t6"><span class="optional">Optional:</span> Offline-Karten</label></div>
+    <div class="item"><input type="checkbox" id="t7"><label for="t7"><span class="optional">Optional:</span> Papierkarte als Backup</label></div>
+
+    <button onclick="resetChecklist()">Checkliste zurücksetzen</button>
+
+    <div class="footer">
+      Lofoten Trip ✈️🏔️
+    </div>
+  </div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    checkboxes.forEach(checkbox => {
+      const saved = localStorage.getItem(checkbox.id);
+      checkbox.checked = saved === 'true';
+
+      checkbox.addEventListener('change', () => {
+        localStorage.setItem(checkbox.id, checkbox.checked);
+      });
+    });
+
+    function resetChecklist() {
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+        localStorage.removeItem(checkbox.id);
+      });
+    }
+  </script>
+</body>
+</html>
